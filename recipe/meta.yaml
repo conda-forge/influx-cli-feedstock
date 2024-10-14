@@ -1,5 +1,5 @@
 {% set name = "influx-cli" %}
-{% set version = "2.7.4" %}
+{% set version = "2.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/influxdata/influx-cli/archive/v{{ version }}.tar.gz
-  sha256: 8e656d5299826c64f3d62124d897531f30ebf9110e76d70d0ae0ca0cce03173a
+  sha256: 2741105c0fa7bf0f728643807aa21e9a8e356b17a681e92f06c4ff680e6944ac
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
